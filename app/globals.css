@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* slider translate */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@layer components {
+  .slider {
+    @apply absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[34px] bg-gradient-to-br from-[#a3a8f0] to-[#696fdd];
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .slider-before {
+    @apply before:absolute before:bottom-[4px] before:left-[4px] before:h-[26px] before:w-[26px] before:rounded-[50%] before:bg-white before:duration-[400ms];
+  }
+  .pricing-container {
+    @apply bg-white px-7 py-6 max-lg:pt-8 drop-shadow-md h-[470px] max-lg:w-[21rem] ;
+  }
+  .pricing-head {
+    @apply mb-5 text-lg text-[#6e718c];
+  }
+  .pricing-features {
+    @apply mb-4 border-b-[1px] pb-4 text-base text-[#6e718c];
+  }
+  .pricing-value {
+    @apply relative mb-4 border-b-[1px] px-10 pb-10 text-7xl text-[#494c5f] ;
+  }
+  .pricing-dollar {
+    @apply absolute left-[12px] top-[19px] text-[40px];
+  }
+  .pricing-learn {
+    @apply mb-3 mt-8 block w-full rounded-md  bg-gradient-to-r from-[#a3a8f0] to-[#696fdd] py-3 text-sm uppercase tracking-widest text-white;
+  }
+  .pricing-learn-hover {
+    @apply transition-all hover:duration-500  hover:outline hover:outline-[1px] hover:outline-black  hover:from-white hover:to-white hover:text-[#696fdd] ;
+  }
 }
