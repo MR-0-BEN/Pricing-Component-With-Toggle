@@ -11,7 +11,7 @@
 
 
 ## Pricing Component with Toggle Demo
-[Pricing Component Demo]()
+[Pricing Component Demo](https://pricing-component-with-toggle-virid-delta.vercel.app/)
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -34,8 +34,8 @@ Welcome to the Pricing Component with Toggle project! This project is a responsi
 
 ## Features
 
-- **Responsive Design:** Ensure optimal viewing on various devices. *Perfect for users on the go!*
 - **Toggle Billing Options:** Easily switch between monthly and annual pricing. *Flexibility at your fingertips!*
+- **Responsive Design:** Ensure optimal viewing on various devices. *Perfect for users on the go!*
 - **Convenient Layout:** Enjoy a user-friendly design for easy navigation and use. *Simplify your experience!*
 - **Beautiful Design:** Benefit from an aesthetically pleasing layout. *Enjoy the visual appeal!*
 
