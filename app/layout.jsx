@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}  box-border text-[15px]`}>
+      <body className={`${montserrat.className} bg-[#f6f6fe] box-border text-[15px] overflow-x-hidden`}>
         {children}
       </body>
     </html>
