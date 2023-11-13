@@ -9,7 +9,7 @@ const Main = () => {
   };
 
   return (
-      <div className="relative h-full w-full ">
+      <div className="relative h-[100vh] w-full ">
       <div className="flex flex-col flex-wrap items-center overflow-x-hidden ">
         {/* background images */}
         <div className="absolute max-lg:right-[-194px] max-lg:top-[-23px] lg:right-0 lg:top-0 ">
